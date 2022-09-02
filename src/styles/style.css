@@ -25,12 +25,126 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--fuchsia-crayola);
-    opacity: 0.9;
+    color: var(--fuchsia-crayola);
     font-size: 36px;
     width: auto;
-    height: 8vh;
+    height: 5vh;
     margin: 20px;
+    border: 2px solid var(--fuchsia-crayola);
+    border-radius: 0.5em;
+    background-color: var(--russian-violet);
+    opacity: 0.75;
+}
+
+.add {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    position: absolute;
+    bottom: 32px;
+    right: 32px;
+    border-style: none;
+    border-radius: 50%;
+    background-color: var(--xiketic);
+    color: var(--byzantine);
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.add:hover {
+    background-color: var(--russian-violet);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 32px;
+    margin: 16px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 300px;
+    justify-content: space-between;
+    padding: 10px;
+    background-color:rgba(255, 0, 242, 0.3);
+    border: 2px solid var(--byzantine);
+    color: white;
+}
+
+.modal {
+    /* display: none; */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.form {
+    margin: 20vh auto;
+    display: flex;
+    flex-direction: column;
+    width: 5vw;
+    min-width: 250px;
+    min-height: auto;
+    background-color:rgba(255, 92, 250, 0.5);
+    padding: 20px;
+    gap: 10px;
     border-radius: 1em;
-    color: var(--russian-violet);
+}
+
+.submit {
+    align-self: center;
+    border: none;
+    width: 60px;
+    padding: 8px;
+    border-radius: 1em;
+    background-color: var(--xiketic);
+    color: white;
+}
+
+.description {
+    border-style: none;
+    padding: 10px;
+    border-radius: 5%;
+    background-color: var(--russian-violet-2);
+    color: whitesmoke;
+
+}
+
+.text {
+    border-style: none;
+    padding: 5px;
+    border-radius: 0.5em;
+    background-color: var(--russian-violet-2);
+    color: whitesmoke;
+}
+
+
+.submit:hover {
+    background-color: var(--byzantine);
+}
+
+.dateOption {
+    border-style: none;
+    padding: 1px 5px 5px 5px;
+    border-radius: 0.5em;
+    background-color: white;
+}
+
+.close {
+    color: black;
+    font-size: xx-large;
+    font-weight: bolder;
+    position: relative;
+    position: absolute;
+    margin-left: 209px;
+    margin-top: -24px;
+    cursor: pointer;
 }
