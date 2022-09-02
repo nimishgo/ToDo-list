@@ -1,0 +1,36 @@
+* , *::after , *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+        --byzantine: #B63CA0ff;
+        --purple-munsell: #9226A8ff;
+        --xiketic: #0E0416ff;
+        --russian-violet: #44174Dff;
+        --ksu-purple: #592598ff;
+        --french-violet: #8122BBff;
+        --russian-violet-2: #200C36ff;
+        --spanish-violet: #3A2468ff;
+        --spanish-violet-2: #3E2781ff;
+        --fuchsia-crayola: #C04ABBff;
+}
+
+body {
+    background-image: url("../assets/background.jpg");
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--fuchsia-crayola);
+    opacity: 0.9;
+    font-size: 36px;
+    width: auto;
+    height: 8vh;
+    margin: 20px;
+    border-radius: 1em;
+    color: var(--russian-violet);
+}
