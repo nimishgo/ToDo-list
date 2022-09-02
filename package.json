@@ -1,0 +1,25 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "description": "Todo list app the Odin Project",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "http-server ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "yes"
+  },
+  "author": "nimishgo",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "data-fns": "^0.1.8"
+  }
+}
