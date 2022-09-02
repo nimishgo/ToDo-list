@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
     <script src="./main.js" defer></script>
     <title>ToDO List</title>
 </head>
@@ -11,8 +13,51 @@
     <h1 class="heading">ToDo List</h1>
 
     <div class="container" id="container">
+        <div class="cards">
+            <h3 class="title" id="title">ADD</h3>
+            <p class="desc" id="desc">css style sheet</p>
+            <p class="date" id="date">19/11/2022</p>
+            <div>
+                High
+            </div>
+            <div class="icons">
+                <span class="material-icons">edit</span>
+                <span class="material-icons">delete</span>
+            </div>
+        </div>
+        <div class="cards">
+            <h3 class="title" id="title">Delete</h3>
+            <p class="desc" id="desc">css style sheet</p>
+            <p class="date" id="date">19/11/2022</p>
+            <div>
+                High
+            </div>
 
+            <div class="icons">
+                <span class="material-icons">edit</span>
+                <span class="material-icons">delete</span>
+            </div>
+        </div>
+       
         <button class="add" id="add">&plus;</button>
+        <div class="modal" id="modal">
+            <form id="form" class="form">
+                <span class="close" id="close">&times;</span>
+                <input type="text" placeholder="Add Title" class="text" required>
+                <textarea name="description" class="description" id="description" cols="30" rows="10" placeholder="add description" required></textarea>
+                <input type="date" class="dateOption" name="begin" id="dateOption" placeholder="dd-mm-yyyy" required>
+                <div class="priority">
+                <p>Select Priority</p>
+                    <input type="radio" name="priority" id="low" checked>
+                    <label for="low">low</label>
+                    <input type="radio" name="priority" id="medium">
+                    <label for="medium">medium</label>
+                    <input type="radio" name="priority" id="high">
+                    <label for="high">high</label>
+                </div>
+                <button type="submit" class="submit" id="submit">submit</button>
+            </form>
+        </div>
     </div>
 
 </body>
