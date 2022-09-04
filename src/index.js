@@ -34,7 +34,9 @@ form.addEventListener('submit', (e) => {
     resetData();
 });
 
-const tasks = [];
+let tasks = [];
+
+
 
 const getData = () => {
     const v = [...priority].filter(val => val.checked === true);
@@ -46,6 +48,7 @@ const getData = () => {
             priority: v[0].value
         });
 
+    localStorage.setItem("tasks", JSON.stringify(tasks));
     createCard();
     console.log(tasks);
 }
@@ -133,6 +136,7 @@ const createCard = () => {
                        let index = parseInt(x.getAttribute("value"));
                        x.parentElement.parentElement.remove();
                        tasks.splice(index,1);
+                       localStorage.setItem("tasks", JSON.stringify(tasks));
                 });
             }
         );
@@ -153,7 +157,14 @@ const createCard = () => {
 
                     x.parentElement.parentElement.remove();
                     tasks.splice(index,1);
+                    localStorage.setItem("tasks", JSON.stringify(tasks));
                 });
             }
         );
 }
+
+(() => {
+    tasks = JSON.parse(localStorage.getItem("tasks")) || []
+    console.log(tasks);
+    createCard();
+})();
