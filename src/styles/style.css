@@ -55,7 +55,7 @@ body {
     background-color: var(--russian-violet);
 }
 
-.container {
+.cardsContainer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 32px;
@@ -75,7 +75,7 @@ body {
 }
 
 .modal {
-    /* display: none; */
+    display: none;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -148,3 +148,4 @@ body {
     margin-top: -24px;
     cursor: pointer;
 }
+
