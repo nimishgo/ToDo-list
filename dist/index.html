@@ -13,30 +13,8 @@
     <h1 class="heading">ToDo List</h1>
 
     <div class="container" id="container">
-        <div class="cards">
-            <h3 class="title" id="title">ADD</h3>
-            <p class="desc" id="desc">css style sheet</p>
-            <p class="date" id="date">19/11/2022</p>
-            <div>
-                High
-            </div>
-            <div class="icons">
-                <span class="material-icons">edit</span>
-                <span class="material-icons">delete</span>
-            </div>
-        </div>
-        <div class="cards">
-            <h3 class="title" id="title">Delete</h3>
-            <p class="desc" id="desc">css style sheet</p>
-            <p class="date" id="date">19/11/2022</p>
-            <div>
-                High
-            </div>
-
-            <div class="icons">
-                <span class="material-icons">edit</span>
-                <span class="material-icons">delete</span>
-            </div>
+        <div class="cardsContainer">
+          
         </div>
        
         <button class="add" id="add">&plus;</button>
@@ -48,12 +26,12 @@
                 <input type="date" class="dateOption" name="begin" id="dateOption" placeholder="dd-mm-yyyy" required>
                 <div class="priority">
                 <p>Select Priority</p>
-                    <input type="radio" name="priority" id="low" checked>
-                    <label for="low">low</label>
-                    <input type="radio" name="priority" id="medium">
-                    <label for="medium">medium</label>
-                    <input type="radio" name="priority" id="high">
-                    <label for="high">high</label>
+                    <input type="radio" name="priority" id="radio" value="low" checked>
+                    low
+                    <input type="radio" name="priority" id="radio" value="medium">
+                    medium
+                    <input type="radio" name="priority" id="radio" value="high">
+                    high
                 </div>
                 <button type="submit" class="submit" id="submit">submit</button>
             </form>
